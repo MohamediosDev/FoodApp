@@ -21,6 +21,8 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
             return catogeries.count
         case popualrCollectionView:
             return popualr.count
+        case specialCollectionView:
+            return spiecal.count
         default:return 0
         }
         
@@ -31,7 +33,7 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
         switch collectionView {
         case catogeryCollectionView:
             let cell = catogeryCollectionView.dequeue(index: indexPath) as FoodCatogeryCollectionViewCell
-
+            
             cell.ConfigureCatogeryCell(catogeries[indexPath.item])
             return cell
             
@@ -40,17 +42,28 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
             
             cell.setupPopualerCell(dish: popualr[indexPath.item])
             return cell
+            
+        case specialCollectionView:
+            let cell = specialCollectionView.dequeue(index: indexPath) as SpecialDishCell
+            
+            cell.configureCell(dish: spiecal[indexPath.item])
+            return cell
         default:return UICollectionViewCell()
             
         }
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 209, height: 350)
-//    }
-    
-    
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView == catogeryCollectionView {
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "DishDetailViewController") as!  DishDetailViewController
+            //test
+        
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
+        
+    }
 }

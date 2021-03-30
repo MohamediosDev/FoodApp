@@ -21,7 +21,5 @@ class OnBoardCollectionViewCell: UICollectionViewCell {
         onBoardImage.image = onBoard.images
         onBoardTitlelable.text = onBoard.title
         onBoardDiscriptionLabel.text = onBoard.discreption
-        
     }
-    
 }

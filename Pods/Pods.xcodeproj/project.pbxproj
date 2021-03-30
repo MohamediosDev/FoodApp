@@ -164,14 +164,14 @@
 		44B5814D7F685E9C7E96530BBAC44ABA /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
 		45D404724BC6C94343DE4EDB03176B4E /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/Extensions/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		46AA20967F5B9B8D9F1F0574FC796576 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/Image/ImageTransition.swift; sourceTree = "<group>"; };
-		47D53D3332EC3BBE36B6F801EA1FDD22 /* Pods_FoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodApp.framework; path = "Pods-FoodApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D53D3332EC3BBE36B6F801EA1FDD22 /* Pods_FoodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C9CC46C04B908FF8708A6DE7FF5419 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		4949453A40E339C29C4D4F9BF9212947 /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKInterfaceImage+Kingfisher.swift"; path = "Sources/Extensions/WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
 		49EC396EA2C7DDD1754FDE1A9F61AC6B /* ImageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFormat.swift; path = Sources/Image/ImageFormat.swift; sourceTree = "<group>"; };
 		4DDB7F706E00312D7C8D49C099CE267D /* ExtensionHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionHelpers.swift; path = Sources/Utility/ExtensionHelpers.swift; sourceTree = "<group>"; };
 		51B0531E6761DF3B43F0FB8223F691EC /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
 		54AF36790D3321D38DAC9D3826B5194B /* Pods-FoodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AF8FBDCE8FCDF2D2D108D599622D01 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		63A85E1A890B3406FBE6B6CF6CA9A938 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		64F70D616E4353F75129C9CBE5B9A76B /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		94BD2A9C15583E3C26A8E664E24CFDEA /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/Extensions/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		95469E54D2653E51FF4852F258BB71E0 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/Networking/RequestModifier.swift; sourceTree = "<group>"; };
 		966FF48F70B606D9906091EC7E77EE51 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F22E1017EE95EF529C84E9EAE4603E9 /* KF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KF.swift; path = Sources/General/KF.swift; sourceTree = "<group>"; };
 		A0C0D9CF759E03E262DBFDC268BB42F9 /* Pods-FoodApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodApp-umbrella.h"; sourceTree = "<group>"; };
 		A23BA739308553B87DCE094B92A8544D /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		BD4D0493C4BD14D5A8C126E54A9576D2 /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Sources/Cache/DiskStorage.swift; sourceTree = "<group>"; };
 		C0D9FCB623D80C6A362E3E5CF813DAB5 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
 		C339E78B632007EF4497A56AD121B94D /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/Networking/ImageDownloader.swift; sourceTree = "<group>"; };
-		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C88447BC8ED007E32CAA30C79B8444 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		C850F8674A03AFB9A6326369279B3FD0 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		C932353FA48FBF9476413655A7571B7D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
@@ -344,7 +344,6 @@
 				184F304C07AA47E6BBAEB280D3BB6D5E /* Validation.swift */,
 				046C3F5E9D927F8881D6308ECFDEBCB7 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -409,7 +408,6 @@
 				4949453A40E339C29C4D4F9BF9212947 /* WKInterfaceImage+Kingfisher.swift */,
 				B4880B12A672D26C7EFA284A9C651CA5 /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -586,7 +584,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -791,6 +789,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -846,7 +845,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -922,7 +921,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -967,6 +966,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1018,7 +1018,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Kingfisher/Kingfisher-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1092,7 +1092,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Kingfisher/Kingfisher-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

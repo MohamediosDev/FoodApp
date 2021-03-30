@@ -34,11 +34,6 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAt-5w-wUc">
                                         <rect key="frame" x="0.0" y="25" width="193" height="293"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="caliors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGV-q5-BrD">
                                         <rect key="frame" x="0.0" y="323" width="193" height="8"/>

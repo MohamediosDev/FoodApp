@@ -1,5 +1,5 @@
 //
-//  PopualrCollectionViewCell.swift
+//  SpecialDishCell.swift
 //  FoodApp
 //
 //  Created by Soda on 3/30/21.
@@ -8,25 +8,24 @@
 import UIKit
 import Kingfisher
 
-class PopualrCollectionViewCell: UICollectionViewCell {
+class SpecialDishCell: UICollectionViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var dishImage: UIImageView!
-    @IBOutlet weak var caliorsLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var discriptionLabel: UILabel!
-    
-    
-    static let cellName =  String(describing: PopualrCollectionViewCell.self)
+    @IBOutlet weak var calioryLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func setupPopualerCell(dish:DishModel)  {
-        titleLabel.text = dish.title
+    func configureCell(dish:DishModel) {
+        
         dishImage.kf.setImage(with: dish.image?.asURL)
-        caliorsLabel.text = dish.formateChange
+        titleLabel.text = dish.title
         discriptionLabel.text = dish.discription
+        calioryLabel.text = dish.formateChange
     }
 }

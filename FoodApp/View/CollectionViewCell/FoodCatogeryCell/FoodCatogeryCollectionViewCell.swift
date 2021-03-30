@@ -26,5 +26,4 @@ class FoodCatogeryCollectionViewCell: UICollectionViewCell {
         catogeryImage.kf.setImage(with: catogery.image.asURL)
         catogeryImage.kf.indicatorType = .activity
     }
-
 }

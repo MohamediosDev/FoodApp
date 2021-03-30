@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var catogeryCollectionView: UICollectionView!
     @IBOutlet weak var popualrCollectionView: UICollectionView!
+    @IBOutlet weak var specialCollectionView: UICollectionView!
     
 
     var catogeries:[DishCatogeryModel] = [
@@ -30,6 +31,14 @@ class HomeViewController: UIViewController {
         .init(id: "id5", image: "https://picsum.photos/100/200", title: "Bashamel", discription: "Nice And Beuti Bashamel", caliory: 12.4),
     ]
     
+    var spiecal:[DishModel] = [
+        
+        .init(id: "id1", image: "https://picsum.photos/100/200", title: "Batata", discription: "Nice And Beuti Batata", caliory: 5.7),
+        .init(id: "id2", image: "https://picsum.photos/100/200", title: "Pepsi", discription: "Nice And Beuti Pepsi", caliory: 4.4),
+        .init(id: "id3", image: "https://picsum.photos/100/200", title: "Mahshey", discription: "Nice And Beuti Mahshey", caliory: 45),
+        .init(id: "id4", image: "https://picsum.photos/100/200", title: "nodels", discription: "Nice And Beuti nodels", caliory: 12.4),
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,14 +47,15 @@ class HomeViewController: UIViewController {
     
     func setupUI() {
         title = "Talabaty"
+        
         setupCollectionView(collection: catogeryCollectionView)
         setupCollectionView(collection: popualrCollectionView)
+        setupCollectionView(collection: specialCollectionView)
      
         catogeryCollectionView.registerNib(cell: FoodCatogeryCollectionViewCell.self)
         popualrCollectionView.registerNib(cell: PopualrCollectionViewCell.self)
+        specialCollectionView.registerNib(cell: SpecialDishCell.self)
         
     }
-    
-
 }
 
