@@ -31,6 +31,10 @@
 		D9302B0426128A4E008F6F60 /* FoodCatogeryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9302B0226128A4E008F6F60 /* FoodCatogeryCollectionViewCell.xib */; };
 		D9302B0B26128BB7008F6F60 /* DishCatogeryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9302B0A26128BB7008F6F60 /* DishCatogeryModel.swift */; };
 		D9302B0E26128CD5008F6F60 /* StringExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9302B0D26128CD5008F6F60 /* StringExtentions.swift */; };
+		D983CE9E261508F30038B46E /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CE9D261508F30038B46E /* OrderViewController.swift */; };
+		D983CEA2261509230038B46E /* OrderViewController+Extetions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CEA1261509230038B46E /* OrderViewController+Extetions.swift */; };
+		D983CEAC261509BE0038B46E /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983CEAA261509BE0038B46E /* OrderTableViewCell.swift */; };
+		D983CEAD261509BE0038B46E /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D983CEAB261509BE0038B46E /* OrderTableViewCell.xib */; };
 		D9E2E7FF2613EAF000520CC8 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E2E7FE2613EAF000520CC8 /* DishDetailViewController.swift */; };
 		E045BC13AB4D43E0847B5284 /* Pods_FoodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBFCC54C7EB2E95B39D9FC /* Pods_FoodApp.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +69,10 @@
 		D9302B0226128A4E008F6F60 /* FoodCatogeryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCatogeryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9302B0A26128BB7008F6F60 /* DishCatogeryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCatogeryModel.swift; sourceTree = "<group>"; };
 		D9302B0D26128CD5008F6F60 /* StringExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtentions.swift; sourceTree = "<group>"; };
+		D983CE9D261508F30038B46E /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		D983CEA1261509230038B46E /* OrderViewController+Extetions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderViewController+Extetions.swift"; sourceTree = "<group>"; };
+		D983CEAA261509BE0038B46E /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		D983CEAB261509BE0038B46E /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		D9E2E7FE2613EAF000520CC8 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +157,7 @@
 		D9302AD526126660008F6F60 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D983CE9C261508D40038B46E /* OrderViewController */,
 				D9E2E7FD2613EAC400520CC8 /* DishDetailViewController */,
 				D9302AD726126687008F6F60 /* HomeViewController */,
 			);
@@ -216,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				D91B6588261352F6002EA510 /* CustomeViews */,
+				D983CEA4261509600038B46E /* TableViewCell */,
 				D9302AFC261289DA008F6F60 /* CollectionViewCell */,
 				D9302AD626126673008F6F60 /* OnBoardController */,
 			);
@@ -282,6 +292,24 @@
 				D91B659126135B53002EA510 /* DishModel.swift */,
 			);
 			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		D983CE9C261508D40038B46E /* OrderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D983CE9D261508F30038B46E /* OrderViewController.swift */,
+				D983CEA1261509230038B46E /* OrderViewController+Extetions.swift */,
+			);
+			path = OrderViewController;
+			sourceTree = "<group>";
+		};
+		D983CEA4261509600038B46E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D983CEAA261509BE0038B46E /* OrderTableViewCell.swift */,
+				D983CEAB261509BE0038B46E /* OrderTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		D9E2E7FD2613EAC400520CC8 /* DishDetailViewController */ = {
@@ -357,6 +385,7 @@
 				D91B659C2613AD35002EA510 /* SpecialDishCell.xib in Resources */,
 				D9302AC92612643B008F6F60 /* Assets.xcassets in Resources */,
 				D9302AC726126437008F6F60 /* Main.storyboard in Resources */,
+				D983CEAD261509BE0038B46E /* OrderTableViewCell.xib in Resources */,
 				D9302AF526127DF0008F6F60 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +442,7 @@
 				D9302AC426126437008F6F60 /* HomeViewController.swift in Sources */,
 				D9302AF12612759F008F6F60 /* OnBoardViewController+Extentions.swift in Sources */,
 				D9302AC026126437008F6F60 /* AppDelegate.swift in Sources */,
+				D983CEAC261509BE0038B46E /* OrderTableViewCell.swift in Sources */,
 				D9E2E7FF2613EAF000520CC8 /* DishDetailViewController.swift in Sources */,
 				D9302B0326128A4E008F6F60 /* FoodCatogeryCollectionViewCell.swift in Sources */,
 				D9302AE1261270C7008F6F60 /* UIView+Extentions.swift in Sources */,
@@ -420,6 +450,7 @@
 				D91B658E26135912002EA510 /* PopualrCollectionViewCell.swift in Sources */,
 				D91B659B2613AD35002EA510 /* SpecialDishCell.swift in Sources */,
 				D91B659226135B53002EA510 /* DishModel.swift in Sources */,
+				D983CE9E261508F30038B46E /* OrderViewController.swift in Sources */,
 				D9302B0B26128BB7008F6F60 /* DishCatogeryModel.swift in Sources */,
 				D9302B0E26128CD5008F6F60 /* StringExtentions.swift in Sources */,
 				D9302AE5261271EF008F6F60 /* OnBoardDataModel.swift in Sources */,
@@ -428,6 +459,7 @@
 				D9302AED2612740F008F6F60 /* OnBoardCollectionViewCell.swift in Sources */,
 				D9302ADD261268E4008F6F60 /* OnBoardViewController.swift in Sources */,
 				D91B659726138C63002EA510 /* TableView+Extenions.swift in Sources */,
+				D983CEA2261509230038B46E /* OrderViewController+Extetions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

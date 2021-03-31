@@ -10,11 +10,12 @@ import UserNotifications
 
 class HomeViewController: UIViewController {
     
-    
+    //MARK: -> Outlet
     @IBOutlet weak var catogeryCollectionView: UICollectionView!
     @IBOutlet weak var popualrCollectionView: UICollectionView!
     @IBOutlet weak var specialCollectionView: UICollectionView!
     
+    //MARK: -> Properties
     
     var catogeries:[DishCatogeryModel] = [
         .init(id: "id1", name: "Egypt Dishs", image: "https://picsum.photos/100/200"),
@@ -40,6 +41,8 @@ class HomeViewController: UIViewController {
         .init(id: "id4", image: "https://picsum.photos/100/200", title: "nodels", discription: "Nice And Beuti nodels", caliory: 12.4),
     ]
     
+    //MARK: -> Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -47,6 +50,8 @@ class HomeViewController: UIViewController {
         addLocalNotifaction()
         
     }
+    
+    //MARK: -> Class Methods
     
     func setupUI() {
         
@@ -69,11 +74,9 @@ class HomeViewController: UIViewController {
         centre.requestAuthorization(options: [.alert , .sound]) { (grant, error) in
             
             if error == nil {
-                
                 print("Error: \(error?.localizedDescription ?? "")")
             }
         }
-        
         //Create Notifaction Content
         let content = UNMutableNotificationContent()
         content.title = "HI 🔴"
@@ -93,5 +96,14 @@ class HomeViewController: UIViewController {
         }
     }
     
+    //MARK: -> IB Actions
+    
+    @IBAction func cartButtonTap(_ sender: UIBarButtonItem) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }
 
