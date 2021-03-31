@@ -9,5 +9,7 @@ target 'FoodApp' do
 
  pod 'Kingfisher'
  pod 'Alamofire'
+ pod 'Hero'
+
 
 end

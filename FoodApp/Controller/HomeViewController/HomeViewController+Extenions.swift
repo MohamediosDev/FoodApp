@@ -55,15 +55,31 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if collectionView == catogeryCollectionView {
-            
-            let vc = storyboard?.instantiateViewController(withIdentifier: "DishDetailViewController") as!  DishDetailViewController
-            //test
         
-            navigationController?.pushViewController(vc, animated: true)
-            
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+        UIView.animate(withDuration: 0.2,animations: {cell?.alpha = 0.5}) {[weak self] (completed) in
+         //fade in
+        UIView.animate(withDuration: 0.2,animations: {
+         //Fade out
+        guard let self = self else {return}
+        cell?.alpha = 1
+        if collectionView == self.catogeryCollectionView {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DishDetailViewController") as!  DishDetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+            }
+        })
+    }
+}
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        let rotationtransForm = CATransform3DTranslate(CATransform3DIdentity, -800, 100, 0)
+        cell.layer.transform = rotationtransForm
+        UIView.animate(withDuration: 0.3) {cell.layer.transform = CATransform3DIdentity}
+        cell.alpha = 0
+        UIView.animate(withDuration: 0.5) {
+            cell.alpha = 1
         }
-        
-        
     }
 }

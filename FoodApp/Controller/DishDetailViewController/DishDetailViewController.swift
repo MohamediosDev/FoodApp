@@ -10,16 +10,16 @@ import UIKit
 class DishDetailViewController: UIViewController {
     
     //MARK:-> Outlet
-
+    
     @IBOutlet weak var dishImage: UIImageView!
     @IBOutlet weak var dishTitleLabel: UILabel!
     @IBOutlet weak var caloryLabel: UILabel!
     @IBOutlet weak var discriptionLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
     
-    
-    
     //MARK:-> Properties
+    
+    
     
     
     
@@ -27,13 +27,17 @@ class DishDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     //MARK:-> Class Methods
     
-
-   
+        
+        
+        
+    
+    
+    
     
     
     //MARK:-> IBActions
@@ -43,5 +47,5 @@ class DishDetailViewController: UIViewController {
     }
     
     
-
+    
 }

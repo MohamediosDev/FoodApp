@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class HomeViewController: UIViewController {
     
@@ -14,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var popualrCollectionView: UICollectionView!
     @IBOutlet weak var specialCollectionView: UICollectionView!
     
-
+    
     var catogeries:[DishCatogeryModel] = [
         .init(id: "id1", name: "Egypt Dishs", image: "https://picsum.photos/100/200"),
         .init(id: "id2", name: "Oman Dishs", image: "https://picsum.photos/100/200"),
@@ -22,7 +23,7 @@ class HomeViewController: UIViewController {
         .init(id: "id4", name: "USA Dishs", image: "https://picsum.photos/100/200"),
         .init(id: "id5", name: "Qanter Dishs", image: "https://picsum.photos/100/200")
     ]
-        
+    
     var popualr:[DishModel] = [
         .init(id: "id1", image: "https://picsum.photos/100/200", title: "pizza", discription: "Nice And Beuti Pizza", caliory: 12.45),
         .init(id: "id2", image: "https://picsum.photos/100/200", title: "indomi", discription: "Nice And Beuti Indomi", caliory: 5.7),
@@ -43,19 +44,54 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupUI()
+        addLocalNotifaction()
+        
     }
     
     func setupUI() {
+        
         title = "Talabaty"
         
         setupCollectionView(collection: catogeryCollectionView)
         setupCollectionView(collection: popualrCollectionView)
         setupCollectionView(collection: specialCollectionView)
-     
+        
         catogeryCollectionView.registerNib(cell: FoodCatogeryCollectionViewCell.self)
         popualrCollectionView.registerNib(cell: PopualrCollectionViewCell.self)
         specialCollectionView.registerNib(cell: SpecialDishCell.self)
         
     }
+    
+    func addLocalNotifaction() {
+        
+        //Ask Permission
+        let centre = UNUserNotificationCenter.current()
+        centre.requestAuthorization(options: [.alert , .sound]) { (grant, error) in
+            
+            if error == nil {
+                
+                print("Error: \(error?.localizedDescription ?? "")")
+            }
+        }
+        
+        //Create Notifaction Content
+        let content = UNMutableNotificationContent()
+        content.title = "HI 🔴"
+        content.body = "Come Again To Seee New Items.🚚🚛"
+        content.sound = .default
+        
+        //Create Notifaction Trigger
+        let date = Date().addingTimeInterval(10)
+        let dateComponnet = Calendar.current.dateComponents([.year , .month , .day , .hour , .minute , .second], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponnet, repeats: false)
+        
+        //Create Request
+        let uuidString = UUID().uuidString
+        let reqeust  = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        centre.add(reqeust) { (error) in
+            
+        }
+    }
+    
 }
 
