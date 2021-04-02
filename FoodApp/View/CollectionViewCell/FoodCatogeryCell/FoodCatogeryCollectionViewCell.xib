@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -30,7 +30,7 @@
                                 <rect key="frame" x="8" y="8" width="45" height="40"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="CellColor"/>
                         <constraints>
                             <constraint firstItem="rZv-vE-jLV" firstAttribute="top" secondItem="Fmw-b4-D1n" secondAttribute="top" constant="8" id="5Jo-Bd-WtX"/>
                             <constraint firstItem="KQa-Dy-hUl" firstAttribute="leading" secondItem="rZv-vE-jLV" secondAttribute="trailing" constant="10" id="8Iu-Lm-Sr7"/>
@@ -60,8 +60,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
+        <namedColor name="CellColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        </namedColor>
     </resources>
 </document>

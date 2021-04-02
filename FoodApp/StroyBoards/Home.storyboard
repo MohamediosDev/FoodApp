@@ -43,7 +43,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Catogery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37j-og-9iG">
                                                         <rect key="frame" x="16" y="16" width="382" height="30.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="CatogeryLabels"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -64,7 +64,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popualr Dishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI6-wk-J7E">
                                                         <rect key="frame" x="16" y="16" width="382" height="57.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="CatogeryLabels"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-bu-fJO">
@@ -121,7 +121,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Dishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tz8-z5-gty">
                                                         <rect key="frame" x="16" y="15" width="382" height="57.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="CatogeryLabels"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -165,7 +165,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wQd-92-0WU"/>
-                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BackGround"/>
                         <constraints>
                             <constraint firstItem="Sct-8L-zoO" firstAttribute="leading" secondItem="wQd-92-0WU" secondAttribute="leading" id="3tl-Pd-Jqc"/>
                             <constraint firstItem="wQd-92-0WU" firstAttribute="trailing" secondItem="Sct-8L-zoO" secondAttribute="trailing" id="EGJ-Ef-4kr"/>
@@ -175,7 +175,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dBJ-7j-hTP">
                         <barButtonItem key="rightBarButtonItem" image="002-grocery-cart" id="gSZ-uf-Qrn">
-                            <color key="tintColor" name="icon color"/>
+                            <color key="tintColor" red="0.73333333329999995" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cartButtonTap:" destination="fWu-dD-KCW" id="03X-1X-RDa"/>
                             </connections>
@@ -202,7 +202,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="Qh1-7l-BXU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="608.5"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SJt-YB-2YT">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SJt-YB-2YT">
                                 <rect key="frame" x="16" y="624.5" width="382" height="221.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-sj-6xZ">
@@ -212,7 +212,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="282" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" name="LabelColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="boZ-fP-AwI">
                                                 <rect key="frame" x="282" y="0.0" width="100" height="24"/>
@@ -221,25 +221,18 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" name="LabelColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gY-29-arr">
-                                        <rect key="frame" x="0.0" y="44" width="382" height="37.5"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="No one care about us hello world No one care about us hello world">
-                                                <attributes>
-                                                    <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No one care about us hello world No one care about us hello worldknsnknsknsknskns" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gY-29-arr">
+                                        <rect key="frame" x="0.0" y="34" width="382" height="67.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" name="LabelColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9je-pv-p7U">
-                                        <rect key="frame" x="0.0" y="101.5" width="382" height="50"/>
+                                        <rect key="frame" x="0.0" y="111.5" width="382" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1cS-3P-IOe"/>
                                         </constraints>
@@ -268,7 +261,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KfZ-Gy-Isg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackGround"/>
                         <constraints>
                             <constraint firstItem="Qh1-7l-BXU" firstAttribute="trailing" secondItem="KfZ-Gy-Isg" secondAttribute="trailing" id="3n0-zS-OZh"/>
                             <constraint firstItem="Qh1-7l-BXU" firstAttribute="top" secondItem="VYI-JO-kED" secondAttribute="top" id="7Q2-X4-UL2"/>
@@ -307,7 +300,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="buP-k3-7en"/>
-                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BackGround"/>
                         <constraints>
                             <constraint firstItem="Ael-MH-a7a" firstAttribute="leading" secondItem="buP-k3-7en" secondAttribute="leading" id="5ys-wn-zZs"/>
                             <constraint firstItem="Ael-MH-a7a" firstAttribute="top" secondItem="buP-k3-7en" secondAttribute="top" id="Lw0-jf-BoI"/>
@@ -331,9 +324,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w6P-yG-S0W">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="LabelColor"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="27"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="LabelColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -349,12 +343,15 @@
     <resources>
         <image name="002-grocery-cart" width="32" height="32"/>
         <image name="slide1" width="968" height="915"/>
-        <namedColor name="icon color">
-            <color red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BackGround">
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="CatogeryLabels">
+            <color white="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="LabelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
