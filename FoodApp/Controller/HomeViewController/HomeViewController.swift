@@ -52,8 +52,8 @@ class HomeViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
         if Core.Shared.isNewUser() {
             
@@ -61,7 +61,6 @@ class HomeViewController: UIViewController {
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
         }
-       
     }
     
     //MARK: -> Class Methods
@@ -98,7 +97,7 @@ class HomeViewController: UIViewController {
         
         //Create Notifaction Trigger
         
-         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 7, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 7, repeats: false)
         //Create Request
         let uuidString = UUID().uuidString
         let reqeust  = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
