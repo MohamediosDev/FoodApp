@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     
     //MARK: -> Properties
     
+    
     var catogeries:[DishCatogeryModel] = [
         .init(id: "id1", name: "Egypt Dishs", image: "https://picsum.photos/100/200"),
         .init(id: "id2", name: "Oman Dishs", image: "https://picsum.photos/100/200"),
@@ -51,6 +52,18 @@ class HomeViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if Core.Shared.isNewUser() {
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "OnBoardViewController") as! OnBoardViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+        }
+       
+    }
+    
     //MARK: -> Class Methods
     
     func setupUI() {
@@ -80,14 +93,12 @@ class HomeViewController: UIViewController {
         //Create Notifaction Content
         let content = UNMutableNotificationContent()
         content.title = "HI 🔴"
-        content.body = "Come Again To Seee New Items.🚚🚛"
+        content.body = "Come Again To See New Items.🚚🚛"
         content.sound = .default
         
         //Create Notifaction Trigger
-        let date = Date().addingTimeInterval(10)
-        let dateComponnet = Calendar.current.dateComponents([.year , .month , .day , .hour , .minute , .second], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponnet, repeats: false)
         
+         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 7, repeats: false)
         //Create Request
         let uuidString = UUID().uuidString
         let reqeust  = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)

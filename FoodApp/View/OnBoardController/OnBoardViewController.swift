@@ -41,6 +41,7 @@ class OnBoardViewController: UIViewController {
         
     }
     
+    
     //MARK:-> class Methods
     
     func assignValueToArray() {
@@ -65,13 +66,12 @@ class OnBoardViewController: UIViewController {
     
     @IBAction func nextButtonTaped(_ sender: Any) {
         
-        
+        UserDefaults.standard.set(true, forKey: "NewUser22")
+
         if currentPage == onBoardSlide.count - 1 {
-            let storyboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-            let NC = storyboard.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
-            NC.modalTransitionStyle = .flipHorizontal
-            NC.modalPresentationStyle = .fullScreen
-            present(NC, animated: true, completion: nil)
+            
+            Core.Shared.notNewUser()
+            dismiss(animated: true, completion: nil)
             print("Go to Another Page 🚀")
         }
         
@@ -80,5 +80,6 @@ class OnBoardViewController: UIViewController {
             let indexpath = IndexPath(item: currentPage, section: 0)
             onBoardCollectionView.scrollToItem(at: indexpath, at: .centeredHorizontally, animated: true)
         }
+        
     }
 }
