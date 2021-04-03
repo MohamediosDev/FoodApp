@@ -19,20 +19,26 @@ class DishDetailViewController: UIViewController {
     
     //MARK:-> Properties
     
-    
-    
-    
+    var dish:DishModel!
     
     //MARK:-> Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        detialView()
     }
     
     //MARK:-> Class Methods
     
+    private func detialView() {
         
+        dishImage.kf.setImage(with: dish.image?.asURL)
+        dishTitleLabel.text = dish.title
+        caloryLabel.text = dish.formateChange
+        discriptionLabel.text = dish.discription
+        
+    }
         
         
     

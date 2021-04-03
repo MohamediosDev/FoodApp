@@ -64,8 +64,19 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
          //Fade out
         guard let self = self else {return}
         cell?.alpha = 1
-        if collectionView == self.catogeryCollectionView {
+            
+            if collectionView == self.catogeryCollectionView {
+                
+                
+                
+            }
+            
+            else {
+            
+       
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DishDetailViewController") as!  DishDetailViewController
+            
+            vc.dish = collectionView == self.popualrCollectionView ? self.popualr[indexPath.item] : self.spiecal[indexPath.item]
         self.navigationController?.pushViewController(vc, animated: true)
             }
         })

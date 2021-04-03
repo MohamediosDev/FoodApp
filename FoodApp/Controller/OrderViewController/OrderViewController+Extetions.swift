@@ -47,6 +47,4 @@ extension OrderViewController  : UITableViewDelegate , UITableViewDataSource{
             cell.alpha = 1
         }
     }
-    
-    
 }
